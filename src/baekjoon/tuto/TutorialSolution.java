@@ -138,4 +138,60 @@ public class TutorialSolution {
       }
     }
   }
+
+  public static class Main14 {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int score = sc.nextInt();
+      String grade;
+
+      if (90 <= score && score <= 100) {
+        grade = "A";
+      } else if (80 <= score && score < 90) {
+        grade = "B";
+      } else if (70 <= score && score < 80) {
+        grade = "C";
+      } else if (60 <= score && score < 70) {
+        grade = "D";
+      } else {
+        grade = "F";
+      }
+
+      System.out.println(grade);
+    }
+  }
+
+  public static class Main15 {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int x = sc.nextInt();
+      int y = sc.nextInt();
+      int quadrant = 0;
+
+      if (0 < x && 0 < y) {
+        quadrant = 1;
+      } else if (x < 0 && 0 < y) {
+        quadrant = 2;
+      } else if (x < 0 && y < 0) {
+        quadrant = 3;
+      } else if (0 < x && y < 0) {
+        quadrant = 4;
+      }
+
+      System.out.println(quadrant);
+    }
+  }
+
+  public class Main16 {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int year = sc.nextInt();
+
+      if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        System.out.println(1);
+      } else {
+        System.out.println(0);
+      }
+    }
+  }
 }

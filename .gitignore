@@ -1,0 +1,12 @@
+*.log
+*.log.gz
+!**/log/
+*.class
+out/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
